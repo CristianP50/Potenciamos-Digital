@@ -1,272 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Potenciamos Digital - Éxito Digital con Respaldo Legal</title>
+    <link rel="icon" href="img/logo-1.png" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --azul-corporativo: #084AA3;
-            --azul-accion: #0087D7;
-            --azul-claro: #3FA1F4;
-            --azul-suave: #D5DDFA;
-            --blanco: #FEFEFE;
-            --gris-suave: #EFEEEA;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Roboto', sans-serif;
-            color: #333;
-            overflow-x: hidden;
-        }
-        
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-        }
-        
-        .navbar {
-            background-color: var(--blanco);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            padding: 1rem 0;
-        }
-        
-        .navbar-brand {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 800;
-            color: var(--azul-corporativo) !important;
-            font-size: 1.5rem;
-        }
-        
-        .nav-link {
-            color: var(--azul-corporativo) !important;
-            font-weight: 500;
-            margin: 0 0.5rem;
-            transition: color 0.3s;
-        }
-        
-        .nav-link:hover {
-            color: var(--azul-accion) !important;
-        }
-        
-        .btn-primary {
-            background-color: var(--azul-accion);
-            border-color: var(--azul-accion);
-            font-weight: 600;
-            padding: 0.75rem 2rem;
-            border-radius: 50px;
-            transition: all 0.3s;
-        }
-        
-        .btn-primary:hover {
-            background-color: var(--azul-corporativo);
-            border-color: var(--azul-corporativo);
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(8, 74, 163, 0.3);
-        }
-        
-        .hero {
-            background: linear-gradient(135deg, var(--azul-corporativo) 0%, var(--azul-accion) 100%);
-            color: var(--blanco);
-            padding: 8rem 0 6rem;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -10%;
-            width: 500px;
-            height: 500px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 50%;
-        }
-        
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-        }
-        
-        .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-            opacity: 0.95;
-        }
-        
-        .section {
-            padding: 5rem 0;
-        }
-        
-        .section-title {
-            font-size: 2.5rem;
-            color: var(--azul-corporativo);
-            margin-bottom: 3rem;
-            text-align: center;
-            position: relative;
-        }
-        
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 80px;
-            height: 4px;
-            background: var(--azul-accion);
-            margin: 1rem auto 0;
-            border-radius: 2px;
-        }
-        
-        .value-card {
-            background: var(--blanco);
-            padding: 2.5rem;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            margin-bottom: 2rem;
-            transition: transform 0.3s, box-shadow 0.3s;
-            border-left: 4px solid var(--azul-accion);
-        }
-        
-        .value-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-        }
-        
-        .value-card h3 {
-            color: var(--azul-corporativo);
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-        
-        .value-card .icon {
-            font-size: 2.5rem;
-            color: var(--azul-accion);
-            margin-bottom: 1rem;
-        }
-        
-        .mission-vision {
-            background: linear-gradient(to bottom, var(--blanco) 0%, var(--gris-suave) 100%);
-        }
-        
-        .mv-card {
-            background: var(--blanco);
-            padding: 3rem;
-            border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-            height: 100%;
-        }
-        
-        .mv-card h3 {
-            color: var(--azul-corporativo);
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        .logo-section {
-            background: var(--azul-suave);
-            text-align: center;
-        }
-        
-        .logo-container {
-            background: var(--blanco);
-            padding: 4rem;
-            border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        .logo-icon {
-            font-size: 8rem;
-            color: var(--azul-corporativo);
-            margin-bottom: 2rem;
-        }
-        
-        .cta-section {
-            background: linear-gradient(135deg, var(--azul-corporativo) 0%, var(--azul-claro) 100%);
-            color: var(--blanco);
-            padding: 5rem 0;
-            text-align: center;
-        }
-        
-        .cta-section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        .btn-light-custom {
-            background-color: var(--blanco);
-            color: var(--azul-corporativo);
-            border: none;
-            font-weight: 600;
-            padding: 0.75rem 2.5rem;
-            border-radius: 50px;
-            transition: all 0.3s;
-        }
-        
-        .btn-light-custom:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 20px rgba(255,255,255,0.4);
-        }
-        
-        footer {
-            background: var(--azul-corporativo);
-            color: var(--blanco);
-            padding: 3rem 0 1.5rem;
-        }
-        
-        footer h5 {
-            margin-bottom: 1.5rem;
-            font-weight: 700;
-        }
-        
-        footer a {
-            color: var(--blanco);
-            text-decoration: none;
-            opacity: 0.85;
-            transition: opacity 0.3s;
-        }
-        
-        footer a:hover {
-            opacity: 1;
-        }
-        
-        .social-icons a {
-            font-size: 1.5rem;
-            margin: 0 0.5rem;
-        }
-        
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .hero p {
-                font-size: 1.1rem;
-            }
-            
-            .section {
-                padding: 3rem 0;
-            }
-        }
-    </style>
+    <link href="style.css" rel="stylesheet">
+    <link href="carrousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="botonContacto.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <i class="fas fa-globe-americas"></i> Potenciamos Digital
+                <img src="img/logo-7.png" class="img-logo" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -289,7 +44,8 @@
             <div class="row align-items-center">
                 <div class="col-lg-8">
                     <h1>Éxito Digital con Respaldo Legal</h1>
-                    <p>Impulsamos negocios que trasciendan. Soluciones digitales integradas con sólido respaldo legal para emprendedores y empresas que buscan crecer de forma segura y sostenible.</p>
+                    <p>Impulsamos negocios que trasciendan. Soluciones digitales integradas con sólido respaldo legal
+                        para emprendedores y empresas que buscan crecer de forma segura y sostenible.</p>
                     <button class="btn btn-light-custom btn-lg">Descubre Cómo</button>
                 </div>
                 <div class="col-lg-4 text-center">
@@ -299,6 +55,55 @@
         </div>
     </section>
 
+    <div class="container pt-5 pb-5">
+        <h2 class="section-title">Servicios Digitales & Legales</h2>
+        <p class="section-subtitle">Desliza para conocer nuestras soluciones integrales</p>
+
+        <div class="slider-container">
+            <!-- Botón anterior -->
+            <button class="nav-button prev" id="prevBtn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <!-- Slider wrapper -->
+            <div class="slider-wrapper" id="sliderWrapper">
+                <div class="slider-card">
+                    <img src="img/servicios/1.svg" alt="Servicio 1">
+                </div>
+                <div class="slider-card">
+                    <img src="img/servicios/2.svg" alt="Servicio 2">
+                </div>
+                <div class="slider-card">
+                    <img src="img/servicios/3.svg" alt="Servicio 3">
+                </div>
+                <div class="slider-card">
+                    <img src="img/servicios/4.svg" alt="Servicio 4">
+                </div>
+                <div class="slider-card">
+                    <img src="img/servicios/5.svg" alt="Servicio 5">
+                </div>
+                <div class="slider-card">
+                    <img src="img/servicios/6.svg" alt="Servicio 6">
+                </div>
+                <div class="slider-card">
+                    <img src="img/servicios/7.svg" alt="Servicio 7">
+                </div>
+                <div class="slider-card">
+                    <img src="img/servicios/8.svg" alt="Servicio 8">
+                </div>
+            </div>
+
+            <!-- Botón siguiente -->
+            <button class="nav-button next" id="nextBtn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <!-- Indicadores -->
+        <div class="slider-indicators" id="indicators"></div>
+    </div>
+
+
     <!-- Misión y Visión -->
     <section id="nosotros" class="section mission-vision">
         <div class="container">
@@ -307,16 +112,26 @@
                 <div class="col-lg-6">
                     <div class="mv-card">
                         <h3><i class="fas fa-bullseye me-2"></i> Misión</h3>
-                        <p>En Potenciamos, nuestra misión es impulsar negocios que trasciendan, ayudando a emprendedores, pequeñas y medianas empresas a crecer de forma segura y sostenible en el mundo digital.</p>
-                        <p>Logramos esto mediante la integración de soluciones digitales —como páginas web, tiendas virtuales y estrategias en redes sociales— con un sólido respaldo legal en la constitución de empresas y protección de marca.</p>
-                        <p>Brindamos un acompañamiento estratégico, transparente y profesional en cada etapa de su desarrollo.</p>
+                        <p>En Potenciamos, nuestra misión es impulsar negocios que trasciendan, ayudando a
+                            emprendedores, pequeñas y medianas empresas a crecer de forma segura y sostenible en el
+                            mundo digital.</p>
+                        <p>Logramos esto mediante la integración de soluciones digitales —como páginas web, tiendas
+                            virtuales y estrategias en redes sociales— con un sólido respaldo legal en la constitución
+                            de empresas y protección de marca.</p>
+                        <p>Brindamos un acompañamiento estratégico, transparente y profesional en cada etapa de su
+                            desarrollo.</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="mv-card">
                         <h3><i class="fas fa-eye me-2"></i> Visión</h3>
-                        <p><strong>Mediano Plazo (3-5 años):</strong> Convertirnos en una agencia digital integral líder en Medellín y Colombia, reconocida por unir la tecnología y el derecho empresarial y ser un referente de confianza y resultados reales.</p>
-                        <p><strong>Largo Plazo (5-10 años):</strong> Ser una marca latinoamericana referente en soluciones digitales y legales integradas, estableciendo un ecosistema de crecimiento donde la tecnología, la creatividad y la seguridad jurídica transformen ideas en negocios exitosos y sostenibles.</p>
+                        <p><strong>Mediano Plazo (3-5 años):</strong> Convertirnos en una agencia digital integral líder
+                            en Medellín y Colombia, reconocida por unir la tecnología y el derecho empresarial y ser un
+                            referente de confianza y resultados reales.</p>
+                        <p><strong>Largo Plazo (5-10 años):</strong> Ser una marca latinoamericana referente en
+                            soluciones digitales y legales integradas, estableciendo un ecosistema de crecimiento donde
+                            la tecnología, la creatividad y la seguridad jurídica transformen ideas en negocios exitosos
+                            y sostenibles.</p>
                     </div>
                 </div>
             </div>
@@ -332,35 +147,42 @@
                     <div class="value-card">
                         <div class="icon"><i class="fas fa-lightbulb"></i></div>
                         <h3>Innovación</h3>
-                        <p>Creemos que el cambio constante es la base del progreso. Buscamos nuevas formas de mejorar nuestros servicios, herramientas y estrategias para mantener a nuestros clientes siempre a la vanguardia del mundo digital.</p>
+                        <p>Creemos que el cambio constante es la base del progreso. Buscamos nuevas formas de mejorar
+                            nuestros servicios, herramientas y estrategias para mantener a nuestros clientes siempre a
+                            la vanguardia del mundo digital.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="value-card">
                         <div class="icon"><i class="fas fa-handshake"></i></div>
                         <h3>Honestidad</h3>
-                        <p>La confianza se construye con transparencia. Actuamos con integridad en cada proceso, ofreciendo información clara, precios justos y resultados reales.</p>
+                        <p>La confianza se construye con transparencia. Actuamos con integridad en cada proceso,
+                            ofreciendo información clara, precios justos y resultados reales.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="value-card">
                         <div class="icon"><i class="fas fa-certificate"></i></div>
                         <h3>Compromiso</h3>
-                        <p>El éxito de nuestros clientes es también el nuestro. Asumimos cada proyecto con responsabilidad, dedicación y enfoque, cumpliendo lo que prometemos y acompañando a nuestros aliados hasta alcanzar los objetivos.</p>
+                        <p>El éxito de nuestros clientes es también el nuestro. Asumimos cada proyecto con
+                            responsabilidad, dedicación y enfoque, cumpliendo lo que prometemos y acompañando a nuestros
+                            aliados hasta alcanzar los objetivos.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="value-card">
                         <div class="icon"><i class="fas fa-palette"></i></div>
                         <h3>Creatividad</h3>
-                        <p>Cada negocio es único. Desarrollamos ideas originales y estrategias personalizadas que reflejan la esencia de cada marca, destacándola en un entorno digital competitivo.</p>
+                        <p>Cada negocio es único. Desarrollamos ideas originales y estrategias personalizadas que
+                            reflejan la esencia de cada marca, destacándola en un entorno digital competitivo.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="value-card">
                         <div class="icon"><i class="fas fa-users"></i></div>
                         <h3>Servicio</h3>
-                        <p>Entendemos que detrás de cada empresa hay personas. Brindamos una atención cercana, humana y profesional, orientada a generar soluciones efectivas y relaciones duraderas.</p>
+                        <p>Entendemos que detrás de cada empresa hay personas. Brindamos una atención cercana, humana y
+                            profesional, orientada a generar soluciones efectivas y relaciones duraderas.</p>
                     </div>
                 </div>
             </div>
@@ -373,16 +195,18 @@
             <h2 class="section-title">Nuestro Símbolo</h2>
             <div class="logo-container">
                 <div class="logo-icon">
-                    <i class="fas fa-globe-americas"></i>
+                    <img src="img/logo-1.png" alt="" class="logo-1">
                 </div>
                 <h3 style="color: var(--azul-corporativo); margin-bottom: 1.5rem;">Potenciamos Digital</h3>
-                <p style="text-align: left;">El logo simboliza la integración estratégica del crecimiento digital y el respaldo jurídico:</p>
+                <p style="text-align: left;">El logo simboliza la integración estratégica del crecimiento digital y el
+                    respaldo jurídico:</p>
                 <ul style="text-align: left; line-height: 1.8;">
                     <li><strong>Globo Terráqueo:</strong> Expansión en el mundo digital y presencia global</li>
                     <li><strong>Flecha Ascendente:</strong> Progreso, potencia y orientación a resultados</li>
                     <li><strong>Diseño Circular:</strong> Escudo protector que ilustra seguridad y solidez legal</li>
                 </ul>
-                <p style="text-align: left; margin-top: 1.5rem;"><em>Un símbolo que representa crecimiento constante, enfocado y protegido.</em></p>
+                <p style="text-align: left; margin-top: 1.5rem;"><em>Un símbolo que representa crecimiento constante,
+                        enfocado y protegido.</em></p>
             </div>
         </div>
     </section>
@@ -391,18 +215,38 @@
     <section id="contacto" class="cta-section">
         <div class="container">
             <h2>¿Listo para Potenciar tu Negocio?</h2>
-            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Únete a los emprendedores y empresas que crecen con confianza y seguridad</p>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Únete a los emprendedores y empresas que crecen con
+                confianza y seguridad</p>
             <button class="btn btn-light-custom btn-lg me-3">Contactar Ahora</button>
             <button class="btn btn-outline-light btn-lg">Conocer Más</button>
         </div>
     </section>
+
+    <div class="whatsapp-float-container">
+        <!-- Texto flotante -->
+        <!-- <div class="whatsapp-text">
+            Comunícate con nosotros
+        </div> -->
+        
+        <!-- Personaje con link a WhatsApp -->
+        <a href="https://wa.me/573001234567?text=Hola,%20quiero%20información%20sobre%20sus%20servicios" 
+           target="_blank" 
+           class="whatsapp-character"
+           title="Chatea con nosotros en WhatsApp">
+            
+            <!-- Imagen del personaje -->
+            <img src="img/mascota.png" 
+                 alt="Comunícate con nosotros" 
+                 class="character-image">
+        </a>
+    </div>
 
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4">
-                    <h5><i class="fas fa-globe-americas me-2"></i> Potenciamos Digital</h5>
+                    <img src="img/logo-8.png" class="img-logo mb-3" alt="logo">
                     <p>Éxito Digital con Respaldo Legal</p>
                     <p>Soluciones integrales para emprendedores y empresas en crecimiento.</p>
                 </div>
@@ -434,5 +278,7 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="carrousel.js"></script>
 </body>
+
 </html>
